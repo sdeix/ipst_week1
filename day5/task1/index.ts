@@ -1,7 +1,7 @@
 type inputType = "Камень" | "Ножницы" | "Бумага";
 
 function game(input: inputType): object {
-  const choices: string[] = ["Камень", "Ножницы", "Бумага"];
+  const choices: inputType[] = ["Камень", "Ножницы", "Бумага"];
   let result: string;
   const computerInput: string = choices[Math.floor(Math.random() * 3)];
 
